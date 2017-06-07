@@ -19,7 +19,7 @@ module.exports = function main(inputs) {
 	for (var k=0; k<itemsList.length; k++)
 		if(count[k] != 0)
 		{
-			textout += '名称：'+itemsList[k].name+'，数量：'+ count[k]+itemsList[k].unit+'，单价：'+itemsList[k].price.toFixed(2)+'(元)，小计：'+(count[j] * itemsList[j].price).toFixed(2)+'(元)\n' 
+			textout += '名称：'+itemsList[k].name+'，数量：'+ count[k]+itemsList[k].unit+'，单价：'+(itemsList[k].price.)toFixed(2)+'(元)，小计：'+(count[j] * itemsList[j].price).toFixed(2)+'(元)\n' 
 			sum += count[j] * itemsList[j].price;
 		}   
 	
