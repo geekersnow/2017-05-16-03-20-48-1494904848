@@ -4,9 +4,13 @@ module.exports = function main(inputs) {
     
 	var itemsList = loadAllItems();
 	var count = [],sum = 0; 
+	for(var m =0 ; m < itemsList.length; m++)
+    {
+    	count[m]=0;
+    }
 	var textout= '***<没钱赚商店>购物清单***\n' ;
-	for(var i = 0;i < itemsList.length; i++ )
-		for(var j = 0; j < itemsList[i].length; j++)
+	for(var i = 0;i < inputs.length; i++ )
+		for(var j = 0; j < itemsList.length; j++)
 			if (inputs[i] == itemsList[j].barcode)
 			{
 				count[j] ++;
