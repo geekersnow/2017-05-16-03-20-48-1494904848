@@ -24,6 +24,6 @@ module.exports = function main(inputs) {
 		}   
 	
 	textout += '----------------------\n总计：'+ sum.toFixed(2) +'(元)\n**********************';   	
-	console.log(textout);
+	return textout;
 };
 
